@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+            margin: 100PX  ;
+          padding: 30 px;
+            box-shadow: 0 0 10px black;
+            margin-bottom: 30px;
+        }
+        table, th, td {
+  border: 1px solid black;
+ border-collapse: collapse;
+ margin-top: 50px;
+ margin-left: 335px;
+ margin-bottom: 150px;
+
+}
+
+    </style>
+    <script>
+   function fn(){
+       var teb=document.getElementById("T");
+       fetch("https://jsonplaceholder.typicode.com/users").then((res)=>{
+           return res.json();
+       }).then((data)=>{
+           console.log(data);       // this part we have to write logic in this section remember this point
+           data.map(function(element){
+            var tr1=document.createElement("tr");
+            var td1=document.createElement("td");
+            var td2=document.createElement("td");
+            var td3=document.createElement("td");
+            var td4=document.createElement("td");
+            tr1.appendChild(td1);
+            tr1.appendChild(td2);
+            tr1.appendChild(td3);
+            tr1.appendChild(td4);
+            teb.appendChild(tr1);
+             td1.append(element.id);
+             td2.append(element.name);
+             td3.append(element.email);
+             td4.append(element.website);
+             
+
+           })
+       });
+   }
+
+
+    </script>
+</head>
+<body>
+    <div>
+     <h2 style="padding-top: 30px;">user details</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia perferendis tenetur numquam, necessitatibus nobis velit blanditiis! Soluta labore possimus deleniti ullam nostrum modi id incidunt! Aliquam velit consequuntur praesentium dolorem!</p>
+    <button onclick="fn()">Click me</button>
+    <table  id="T">
+ <tr>
+     <th>ID</th>
+     <th>NAME</th>
+     <th>EMAIL</th>
+     <th>WEBSITE</th>
+ </tr>
+
+    </table>
+    </div>
+</body>
+</html>

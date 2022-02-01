@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+            color:cornflowerblue;
+            width: 300px;
+            margin: 100px auto;
+            background-color:burlywood+;
+            box-shadow: 0 0 10px black;
+            padding: 30px;
+         
+
+        }
+    </style>
+    <script>
+         var change={
+             x:"Thank You",
+         };
+         var change2={
+             x:"You are future developer",
+         };
+function fn(){
+    var res=document.getElementById("u");
+   // res.innerText="GOODMORNING";
+   res.innerText= this.x;
+    res.style.color="purple";
+}
+
+
+
+    </script>
+</head>
+<body>
+    <div>
+        <h3 id="u">Toaday Testing</h3>
+        <button style="background-color: crimson; border-color: darkblue;" onclick="fn.call(change)">submit</button>
+        <button style="margin-left: 10px;"  onclick="fn.call(change2)">cancel</button>
+    </div>
+</body>
+</html>

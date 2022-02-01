@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+            margin: 100px auto;
+            box-shadow: 0 0 10px burlywood;
+            padding: 30px;
+            width: 350px;
+
+        }
+    </style>
+    <script>
+        function ma(){
+            var ref=document.getElementById("u");
+            ref.innerHTML="<b>Hii Mern Developer very good morning</b>";
+            ref.style.color="red";
+        }
+        function fn(){
+            var ref=document.getElementById("u");
+            ref.innerHTML="<b>Hii Mern Developer very good night</b>";
+            ref.style.color="blue";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h3 id="u">React Developer</h3>
+    
+        <button style="border-color: red;background-color: coral ; margin-right: 20px;" onclick="ma()" >Sagar</button>
+        <button style="background-color: greenyellow; border-color: green;" onclick="fn()">Santanu</button>
+    </div>
+</body>
+</html>

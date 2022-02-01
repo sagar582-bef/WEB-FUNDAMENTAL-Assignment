@@ -1,4 +1,5 @@
-var noOf=prompt("please enter total number");
+var noOf=prompt("please enter total number"); 
+noOf=parseInt(noOf);
 // var arr=[];
 // for(var i=0;i<noOf;i++){
 //     var value=prompt("please enter a value");
@@ -12,3 +13,4 @@ var noOf=prompt("please enter total number");
 for(var i=noOf;i>=1;i--){
     console.log(i);
 }
+

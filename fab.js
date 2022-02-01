@@ -1,8 +1,8 @@
 
 var num=prompt("please enter a number");
-var defaul=0;
-console.log(defaul);
-var first=1;
+num=parseInt(num);
+
+var first=0;
 console.log(first);
 var second=1;
 console.log(second);

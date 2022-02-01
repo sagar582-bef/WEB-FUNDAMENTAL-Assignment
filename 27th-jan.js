@@ -1,16 +1,19 @@
-var noOfNum=prompt(" enter the total number");
-var arr=[];
-var i=0;
-for(i=0;i<noOfNum;i++){
-    var value=prompt("please enter value");
-    arr.push(value);
+var r=prompt("size of array");
+var arr = [];
+for(var i=0;i<r;i++){
+   // arr[i]=new Array(r);
+arr[i]= prompt("Enter random number");
 }
+console.log(arr[i]);
 var max=arr[0];
-for(i=0;i<noOfNum;i++){
-    if(arr[i]>max){
+for(var i=0;i<r;i++){
+    if(max<arr[i]){
         max=arr[i];
     }
 }
-console.log("It is the max number", max);
+alert(max);
+console.log( max);
 
-alert(max)
+
+
+
